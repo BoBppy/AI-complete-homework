@@ -1,0 +1,26 @@
+# OpenAI API配置
+openai:
+  api_key: "" # 默认API密钥
+  api_base: "" # 默认API地址
+  model: "gpt-4o" # 默认模型
+  temperature: 0.95 # 生成文本的创造性程度
+  max_tokens: 128000 # 最大token数量
+
+# 服务器配置
+server:
+  host: "0.0.0.0"
+  port: 8001
+  reload: true
+
+# 文件处理配置
+file:
+  max_size_mb: 10 # 最大文件大小（MB）
+  allowed_extensions: [".docx"]
+  upload_dir: "uploads"
+  output_dir: "outputs"
+
+# 日志配置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "app.log"
